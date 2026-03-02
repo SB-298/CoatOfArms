@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>VerticalThirds</defName>
+    <label>Vertical thirds</label>
+    <texturePath>CoatOfArms/Backgrounds/VerticalThirds</texturePath>
+    <colorCount>2</colorCount>
+    <order>120</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>ThreeStripes</defName>
+    <label>Three stripes</label>
+    <texturePath>CoatOfArms/Backgrounds/ThreeStripes</texturePath>
+    <colorCount>2</colorCount>
+    <order>125</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Border</defName>
+    <label>Border</label>
+    <texturePath>CoatOfArms/Backgrounds/Border</texturePath>
+    <colorCount>2</colorCount>
+    <order>130</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+</Defs>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- CoatOfArms/Emblems/Shapes/... -->
+  <CoatOfArms.EmblemDef>
+    <defName>Circle</defName>
+    <label>Circle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Circle</texturePath>
+    <category>Shapes</category>
+    <order>0</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>AngleTriangle</defName>
+    <label>Angle triangle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/AngleTriangle</texturePath>
+    <category>Shapes</category>
+    <order>10</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Arch</defName>
+    <label>Arch</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Arch</texturePath>
+    <category>Shapes</category>
+    <order>20</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Hexagon</defName>
+    <label>Hexagon</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Hexagon</texturePath>
+    <category>Shapes</category>
+    <order>30</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Triangle</defName>
+    <label>Triangle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Triangle</texturePath>
+    <category>Shapes</category>
+    <order>40</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>SquareSymbol</defName>
+    <label>Square</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Square</texturePath>
+    <category>Shapes</category>
+    <order>50</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>LongRectangle</defName>
+    <label>Long rectangle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Rectangle</texturePath>
+    <category>Shapes</category>
+    <order>60</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Semicircle</defName>
+    <label>Semicircle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Semicircle</texturePath>
+    <category>Shapes</category>
+    <order>70</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Trapezium</defName>
+    <label>Trapezium</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Trapezium</texturePath>
+    <category>Shapes</category>
+    <order>80</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>HollowCircle</defName>
+    <label>Hollow circle</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/HollowCircle</texturePath>
+    <category>Shapes</category>
+    <order>90</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>CrossEmblem</defName>
+    <label>Cross</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Cross</texturePath>
+    <category>Shapes</category>
+    <order>100</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Shield</defName>
+    <label>Shield</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Shield</texturePath>
+    <category>Shapes</category>
+    <order>110</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Star</defName>
+    <label>Star</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Star</texturePath>
+    <category>Shapes</category>
+    <order>120</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Moon</defName>
+    <label>Moon</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Moon</texturePath>
+    <category>Shapes</category>
+    <order>130</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Heart</defName>
+    <label>Heart</label>
+    <texturePath>CoatOfArms/Emblems/Shapes/Heart</texturePath>
+    <category>Shapes</category>
+    <order>140</order>
+  </CoatOfArms.EmblemDef>
+
+</Defs>

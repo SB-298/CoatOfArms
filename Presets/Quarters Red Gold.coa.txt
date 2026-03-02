@@ -1,0 +1,9 @@
+v=1
+f=Shield
+outline=0
+ot=1
+bp=Quarters
+pr=0.7,0.1,0.1,1
+ps=0.97,0.85,0.2,1
+pt=0.8,0.1,0.1,1
+ec=0

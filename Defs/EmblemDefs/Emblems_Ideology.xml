@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ideology DLC emblems: same texture paths as Ideology defs.
+  Paths: UI/Roles/*, UI/Issues/*, UI/Structures/*, UI/Ideoligions/Universal/*, UI/Ideoligions/*
+  No UI/Memes. modRequired="Ideology" so they only show when Ideology is enabled.
+-->
+<Defs>
+
+  <!-- Roles (UI/Roles/...) -->
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_Moralist</defName>
+    <label>Moralist</label>
+    <texturePath>UI/Roles/Moralist</texturePath>
+    <category>Roles</category>
+    <order>0</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_Leader</defName>
+    <label>Leader</label>
+    <texturePath>UI/Roles/Leader</texturePath>
+    <category>Roles</category>
+    <order>10</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistShooting</defName>
+    <label>Shooting specialist</label>
+    <texturePath>UI/Roles/SpecialistShooting</texturePath>
+    <category>Roles</category>
+    <order>20</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistMelee</defName>
+    <label>Melee specialist</label>
+    <texturePath>UI/Roles/SpecialistMelee</texturePath>
+    <category>Roles</category>
+    <order>30</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistResearch</defName>
+    <label>Research specialist</label>
+    <texturePath>UI/Roles/SpecialistResearch</texturePath>
+    <category>Roles</category>
+    <order>40</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistPlants</defName>
+    <label>Plants specialist</label>
+    <texturePath>UI/Roles/SpecialistPlants</texturePath>
+    <category>Roles</category>
+    <order>50</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistProduction</defName>
+    <label>Production specialist</label>
+    <texturePath>UI/Roles/SpecialistProduction</texturePath>
+    <category>Roles</category>
+    <order>60</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistMining</defName>
+    <label>Mining specialist</label>
+    <texturePath>UI/Roles/SpecialistMining</texturePath>
+    <category>Roles</category>
+    <order>70</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistAnimals</defName>
+    <label>Animals specialist</label>
+    <texturePath>UI/Roles/SpecialistAnimals</texturePath>
+    <category>Roles</category>
+    <order>80</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoRole_SpecialistMedical</defName>
+    <label>Medical specialist</label>
+    <texturePath>UI/Roles/SpecialistMedical</texturePath>
+    <category>Roles</category>
+    <order>90</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Issues (UI/Issues/...) -->
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Blindness</defName>
+    <label>Blindness</label>
+    <texturePath>UI/Issues/Blindness</texturePath>
+    <category>Precepts</category>
+    <order>0</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_MeatEating</defName>
+    <label>Meat eating</label>
+    <texturePath>UI/Issues/MeatEating</texturePath>
+    <category>Precepts</category>
+    <order>10</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Fungus</defName>
+    <label>Fungus</label>
+    <texturePath>UI/Issues/Fungus</texturePath>
+    <category>Precepts</category>
+    <order>20</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_SmallSpaces</defName>
+    <label>Small spaces</label>
+    <texturePath>UI/Issues/SmallSpaces</texturePath>
+    <category>Precepts</category>
+    <order>30</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Temperature</defName>
+    <label>Temperature</label>
+    <texturePath>UI/Issues/Temperature</texturePath>
+    <category>Precepts</category>
+    <order>40</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_AnimalSlaughter</defName>
+    <label>Animal slaughter</label>
+    <texturePath>UI/Issues/AnimalSlaughter</texturePath>
+    <category>Precepts</category>
+    <order>50</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Nudity_Male</defName>
+    <label>Nudity (male)</label>
+    <texturePath>UI/Issues/Nudity_Male</texturePath>
+    <category>Precepts</category>
+    <order>60</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Nudity_Female</defName>
+    <label>Nudity (female)</label>
+    <texturePath>UI/Issues/Nudity_Female</texturePath>
+    <category>Precepts</category>
+    <order>70</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Proselytizing</defName>
+    <label>Proselytizing</label>
+    <texturePath>UI/Issues/Proselytizing</texturePath>
+    <category>Precepts</category>
+    <order>80</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_RoughLiving</defName>
+    <label>Rough living</label>
+    <texturePath>UI/Issues/RoughLiving</texturePath>
+    <category>Precepts</category>
+    <order>90</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_SleepAccelerator</defName>
+    <label>Sleep accelerator</label>
+    <texturePath>UI/Issues/SleepAccelerator</texturePath>
+    <category>Precepts</category>
+    <order>100</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_BioSculpting</defName>
+    <label>Bio sculpting</label>
+    <texturePath>UI/Issues/BioSculpting</texturePath>
+    <category>Precepts</category>
+    <order>110</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_AgeReversal</defName>
+    <label>Age reversal</label>
+    <texturePath>UI/Issues/AgeReversal</texturePath>
+    <category>Precepts</category>
+    <order>120</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_NeuralSupercharger</defName>
+    <label>Neural supercharger</label>
+    <texturePath>UI/Issues/NeuralSupercharger</texturePath>
+    <category>Precepts</category>
+    <order>130</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Mining</defName>
+    <label>Mining</label>
+    <texturePath>UI/Issues/Mining</texturePath>
+    <category>Precepts</category>
+    <order>140</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_MiningYield</defName>
+    <label>Mining yield</label>
+    <texturePath>UI/Issues/MiningYield</texturePath>
+    <category>Precepts</category>
+    <order>150</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Bonding</defName>
+    <label>Bonding</label>
+    <texturePath>UI/Issues/Bonding</texturePath>
+    <category>Precepts</category>
+    <order>160</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Charity</defName>
+    <label>Charity</label>
+    <texturePath>UI/Issues/Charity</texturePath>
+    <category>Precepts</category>
+    <order>170</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_IdeoDiversity</defName>
+    <label>Ideo diversity</label>
+    <texturePath>UI/Issues/IdeoDiversity</texturePath>
+    <category>Precepts</category>
+    <order>180</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_AutonomousWeapons</defName>
+    <label>Autonomous weapons</label>
+    <texturePath>UI/Issues/AutonomousWeapons</texturePath>
+    <category>Precepts</category>
+    <order>190</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Slavery</defName>
+    <label>Slavery</label>
+    <texturePath>UI/Issues/Slavery</texturePath>
+    <category>Precepts</category>
+    <order>200</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Scarification</defName>
+    <label>Scarification</label>
+    <texturePath>UI/Issues/Scarification</texturePath>
+    <category>Precepts</category>
+    <order>210</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_Pain</defName>
+    <label>Pain</label>
+    <texturePath>UI/Issues/Pain</texturePath>
+    <category>Precepts</category>
+    <order>220</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoIssue_BlindPsysense</defName>
+    <label>Blind psysense</label>
+    <texturePath>UI/Issues/BlindPsysense</texturePath>
+    <category>Precepts</category>
+    <order>230</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Structures (UI/Structures/...) -->
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_Animist</defName>
+    <label>Animist</label>
+    <texturePath>UI/Structures/Animist</texturePath>
+    <category>Structures</category>
+    <order>0</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_EmbodiedTheist</defName>
+    <label>Embodied theist</label>
+    <texturePath>UI/Structures/Structure_EmbodiedTheist</texturePath>
+    <category>Structures</category>
+    <order>10</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_AbstractTheist</defName>
+    <label>Abstract theist</label>
+    <texturePath>UI/Structures/AbstractTheist</texturePath>
+    <category>Structures</category>
+    <order>20</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_Ideological</defName>
+    <label>Ideological</label>
+    <texturePath>UI/Structures/Structure_Ideological</texturePath>
+    <category>Structures</category>
+    <order>30</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_Archist</defName>
+    <label>Archist</label>
+    <texturePath>UI/Structures/Archist</texturePath>
+    <category>Structures</category>
+    <order>40</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_OriginChristian</defName>
+    <label>Origin Christian</label>
+    <texturePath>UI/Structures/OriginChristian</texturePath>
+    <category>Structures</category>
+    <order>50</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_OriginIslamic</defName>
+    <label>Origin Islamic</label>
+    <texturePath>UI/Structures/OriginIslamic</texturePath>
+    <category>Structures</category>
+    <order>60</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_OriginHindu</defName>
+    <label>Origin Hindu</label>
+    <texturePath>UI/Structures/OriginHindu</texturePath>
+    <category>Structures</category>
+    <order>70</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoStructure_OriginBuddhist</defName>
+    <label>Origin Buddhist</label>
+    <texturePath>UI/Structures/OriginBuddhist</texturePath>
+    <category>Structures</category>
+    <order>80</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Universal ideoligion icons (UI/Ideoligions/Universal/...) -->
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_AbstractsA</defName>
+    <label>Abstracts A</label>
+    <texturePath>UI/Ideoligions/Universal/AbstractsA</texturePath>
+    <category>Ideologies</category>
+    <order>0</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_AbstractsB</defName>
+    <label>Abstracts B</label>
+    <texturePath>UI/Ideoligions/Universal/AbstractsB</texturePath>
+    <category>Ideologies</category>
+    <order>5</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_AbstractsC</defName>
+    <label>Abstracts C</label>
+    <texturePath>UI/Ideoligions/Universal/AbstractsC</texturePath>
+    <category>Ideologies</category>
+    <order>10</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_AbstractsD</defName>
+    <label>Abstracts D</label>
+    <texturePath>UI/Ideoligions/Universal/AbstractsD</texturePath>
+    <category>Ideologies</category>
+    <order>15</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_AbstractsE</defName>
+    <label>Abstracts E</label>
+    <texturePath>UI/Ideoligions/Universal/AbstractsE</texturePath>
+    <category>Ideologies</category>
+    <order>20</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_CirclesA</defName>
+    <label>Circles A</label>
+    <texturePath>UI/Ideoligions/Universal/CirclesA</texturePath>
+    <category>Ideologies</category>
+    <order>25</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_CirclesB</defName>
+    <label>Circles B</label>
+    <texturePath>UI/Ideoligions/Universal/CirclesB</texturePath>
+    <category>Ideologies</category>
+    <order>30</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_CirclesC</defName>
+    <label>Circles C</label>
+    <texturePath>UI/Ideoligions/Universal/CirclesC</texturePath>
+    <category>Ideologies</category>
+    <order>35</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_CirclesD</defName>
+    <label>Circles D</label>
+    <texturePath>UI/Ideoligions/Universal/CirclesD</texturePath>
+    <category>Ideologies</category>
+    <order>40</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_CirclesE</defName>
+    <label>Circles E</label>
+    <texturePath>UI/Ideoligions/Universal/CirclesE</texturePath>
+    <category>Ideologies</category>
+    <order>45</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_Dotcircle</defName>
+    <label>Dot circle</label>
+    <texturePath>UI/Ideoligions/Universal/Dotcircle</texturePath>
+    <category>Ideologies</category>
+    <order>50</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_DoubleLoop</defName>
+    <label>Double loop</label>
+    <texturePath>UI/Ideoligions/Universal/DoubleLoop</texturePath>
+    <category>Ideologies</category>
+    <order>55</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_PoliticalE</defName>
+    <label>Political E</label>
+    <texturePath>UI/Ideoligions/Universal/PoliticalE</texturePath>
+    <category>Ideologies</category>
+    <order>60</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_RoundA</defName>
+    <label>Round A</label>
+    <texturePath>UI/Ideoligions/Universal/RoundA</texturePath>
+    <category>Ideologies</category>
+    <order>65</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_RoundB</defName>
+    <label>Round B</label>
+    <texturePath>UI/Ideoligions/Universal/RoundB</texturePath>
+    <category>Ideologies</category>
+    <order>70</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_RoundC</defName>
+    <label>Round C</label>
+    <texturePath>UI/Ideoligions/Universal/RoundC</texturePath>
+    <category>Ideologies</category>
+    <order>75</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_RoundD</defName>
+    <label>Round D</label>
+    <texturePath>UI/Ideoligions/Universal/RoundD</texturePath>
+    <category>Ideologies</category>
+    <order>80</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_RoundE</defName>
+    <label>Round E</label>
+    <texturePath>UI/Ideoligions/Universal/RoundE</texturePath>
+    <category>Ideologies</category>
+    <order>85</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_SpiralsB</defName>
+    <label>Spirals B</label>
+    <texturePath>UI/Ideoligions/Universal/SpiralsB</texturePath>
+    <category>Ideologies</category>
+    <order>90</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_SpiralsC</defName>
+    <label>Spirals C</label>
+    <texturePath>UI/Ideoligions/Universal/SpiralsC</texturePath>
+    <category>Ideologies</category>
+    <order>95</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_SpiralsD</defName>
+    <label>Spirals D</label>
+    <texturePath>UI/Ideoligions/Universal/SpiralsD</texturePath>
+    <category>Ideologies</category>
+    <order>100</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_SpiralsE</defName>
+    <label>Spirals E</label>
+    <texturePath>UI/Ideoligions/Universal/SpiralsE</texturePath>
+    <category>Ideologies</category>
+    <order>105</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_StarsA</defName>
+    <label>Stars A</label>
+    <texturePath>UI/Ideoligions/Universal/StarsA</texturePath>
+    <category>Ideologies</category>
+    <order>110</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_StarsB</defName>
+    <label>Stars B</label>
+    <texturePath>UI/Ideoligions/Universal/StarsB</texturePath>
+    <category>Ideologies</category>
+    <order>115</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_StarsC</defName>
+    <label>Stars C</label>
+    <texturePath>UI/Ideoligions/Universal/StarsC</texturePath>
+    <category>Ideologies</category>
+    <order>120</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_StarsD</defName>
+    <label>Stars D</label>
+    <texturePath>UI/Ideoligions/Universal/StarsD</texturePath>
+    <category>Ideologies</category>
+    <order>125</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_StarsE</defName>
+    <label>Stars E</label>
+    <texturePath>UI/Ideoligions/Universal/StarsE</texturePath>
+    <category>Ideologies</category>
+    <order>130</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoUniversal_TripleCross</defName>
+    <label>Triple cross</label>
+    <texturePath>UI/Ideoligions/Universal/TripleCross</texturePath>
+    <category>Ideologies</category>
+    <order>135</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Specific ideoligion icons (UI/Ideoligions/...) -->
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_AnimalsA</defName>
+    <label>Animals A</label>
+    <texturePath>UI/Ideoligions/AnimalsA</texturePath>
+    <category>Ideologies</category>
+    <order>0</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_AnimalsB</defName>
+    <label>Animals B</label>
+    <texturePath>UI/Ideoligions/AnimalsB</texturePath>
+    <category>Ideologies</category>
+    <order>5</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_AnimalsC</defName>
+    <label>Animals C</label>
+    <texturePath>UI/Ideoligions/AnimalsC</texturePath>
+    <category>Ideologies</category>
+    <order>10</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_AnimalsD</defName>
+    <label>Animals D</label>
+    <texturePath>UI/Ideoligions/AnimalsD</texturePath>
+    <category>Ideologies</category>
+    <order>15</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_AnimalsE</defName>
+    <label>Animals E</label>
+    <texturePath>UI/Ideoligions/AnimalsE</texturePath>
+    <category>Ideologies</category>
+    <order>20</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Archist_Lance</defName>
+    <label>Archist lance</label>
+    <texturePath>UI/Ideoligions/Archist_Lance</texturePath>
+    <category>Ideologies</category>
+    <order>25</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Archist_Spikes</defName>
+    <label>Archist spikes</label>
+    <texturePath>UI/Ideoligions/Archist_Spikes</texturePath>
+    <category>Ideologies</category>
+    <order>30</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ArchotechA</defName>
+    <label>Archotech A</label>
+    <texturePath>UI/Ideoligions/ArchotechA</texturePath>
+    <category>Ideologies</category>
+    <order>35</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ArchotechB</defName>
+    <label>Archotech B</label>
+    <texturePath>UI/Ideoligions/ArchotechB</texturePath>
+    <category>Ideologies</category>
+    <order>40</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ArchotechC</defName>
+    <label>Archotech C</label>
+    <texturePath>UI/Ideoligions/ArchotechC</texturePath>
+    <category>Ideologies</category>
+    <order>45</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ArchotechD</defName>
+    <label>Archotech D</label>
+    <texturePath>UI/Ideoligions/ArchotechD</texturePath>
+    <category>Ideologies</category>
+    <order>50</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ArchotechE</defName>
+    <label>Archotech E</label>
+    <texturePath>UI/Ideoligions/ArchotechE</texturePath>
+    <category>Ideologies</category>
+    <order>55</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_DownBurst</defName>
+    <label>Down burst</label>
+    <texturePath>UI/Ideoligions/DownBurst</texturePath>
+    <category>Ideologies</category>
+    <order>60</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Eagle</defName>
+    <label>Eagle</label>
+    <texturePath>UI/Ideoligions/Eagle</texturePath>
+    <category>Ideologies</category>
+    <order>65</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ElementA</defName>
+    <label>Element A</label>
+    <texturePath>UI/Ideoligions/ElementA</texturePath>
+    <category>Ideologies</category>
+    <order>70</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ElementB</defName>
+    <label>Element B</label>
+    <texturePath>UI/Ideoligions/ElementB</texturePath>
+    <category>Ideologies</category>
+    <order>75</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ElementC</defName>
+    <label>Element C</label>
+    <texturePath>UI/Ideoligions/ElementC</texturePath>
+    <category>Ideologies</category>
+    <order>80</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ElementD</defName>
+    <label>Element D</label>
+    <texturePath>UI/Ideoligions/ElementD</texturePath>
+    <category>Ideologies</category>
+    <order>85</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ElementE</defName>
+    <label>Element E</label>
+    <texturePath>UI/Ideoligions/ElementE</texturePath>
+    <category>Ideologies</category>
+    <order>90</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_EmbodiedTheist_Bolthand</defName>
+    <label>Embodied theist bolthand</label>
+    <texturePath>UI/Ideoligions/EmbodiedTheist_Bolthand</texturePath>
+    <category>Ideologies</category>
+    <order>95</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_EmbodiedTheist_Punchcloud</defName>
+    <label>Embodied theist punchcloud</label>
+    <texturePath>UI/Ideoligions/EmbodiedTheist_Punchcloud</texturePath>
+    <category>Ideologies</category>
+    <order>100</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_FireLeaves</defName>
+    <label>Fire leaves</label>
+    <texturePath>UI/Ideoligions/FireLeaves</texturePath>
+    <category>Ideologies</category>
+    <order>105</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_FistRaised</defName>
+    <label>Fist raised</label>
+    <texturePath>UI/Ideoligions/FistRaised</texturePath>
+    <category>Ideologies</category>
+    <order>110</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_FlowerSharp</defName>
+    <label>Flower sharp</label>
+    <texturePath>UI/Ideoligions/FlowerSharp</texturePath>
+    <category>Ideologies</category>
+    <order>115</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_GeometryA</defName>
+    <label>Geometry A</label>
+    <texturePath>UI/Ideoligions/GeometryA</texturePath>
+    <category>Ideologies</category>
+    <order>120</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_GeometryB</defName>
+    <label>Geometry B</label>
+    <texturePath>UI/Ideoligions/GeometryB</texturePath>
+    <category>Ideologies</category>
+    <order>125</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_GeometryC</defName>
+    <label>Geometry C</label>
+    <texturePath>UI/Ideoligions/GeometryC</texturePath>
+    <category>Ideologies</category>
+    <order>130</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_GeometryD</defName>
+    <label>Geometry D</label>
+    <texturePath>UI/Ideoligions/GeometryD</texturePath>
+    <category>Ideologies</category>
+    <order>135</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_GeometryE</defName>
+    <label>Geometry E</label>
+    <texturePath>UI/Ideoligions/GeometryE</texturePath>
+    <category>Ideologies</category>
+    <order>140</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_KnivesDown</defName>
+    <label>Knives down</label>
+    <texturePath>UI/Ideoligions/KnivesDown</texturePath>
+    <category>Ideologies</category>
+    <order>145</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ManFlower</defName>
+    <label>Man flower</label>
+    <texturePath>UI/Ideoligions/ManFlower</texturePath>
+    <category>Ideologies</category>
+    <order>150</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_NatureB</defName>
+    <label>Nature B</label>
+    <texturePath>UI/Ideoligions/NatureB</texturePath>
+    <category>Ideologies</category>
+    <order>155</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_NatureC</defName>
+    <label>Nature C</label>
+    <texturePath>UI/Ideoligions/NatureC</texturePath>
+    <category>Ideologies</category>
+    <order>160</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_NatureD</defName>
+    <label>Nature D</label>
+    <texturePath>UI/Ideoligions/NatureD</texturePath>
+    <category>Ideologies</category>
+    <order>165</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_NatureE</defName>
+    <label>Nature E</label>
+    <texturePath>UI/Ideoligions/NatureE</texturePath>
+    <category>Ideologies</category>
+    <order>170</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_OliveBranches</defName>
+    <label>Olive branches</label>
+    <texturePath>UI/Ideoligions/OliveBranches</texturePath>
+    <category>Ideologies</category>
+    <order>175</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Orbit</defName>
+    <label>Orbit</label>
+    <texturePath>UI/Ideoligions/Orbit</texturePath>
+    <category>Ideologies</category>
+    <order>180</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Ouroboros</defName>
+    <label>Ouroboros</label>
+    <texturePath>UI/Ideoligions/Ouroboros</texturePath>
+    <category>Ideologies</category>
+    <order>185</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_PirateC</defName>
+    <label>Pirate C</label>
+    <texturePath>UI/Ideoligions/PirateC</texturePath>
+    <category>Ideologies</category>
+    <order>190</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_PirateD</defName>
+    <label>Pirate D</label>
+    <texturePath>UI/Ideoligions/PirateD</texturePath>
+    <category>Ideologies</category>
+    <order>195</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_PirateE</defName>
+    <label>Pirate E</label>
+    <texturePath>UI/Ideoligions/PirateE</texturePath>
+    <category>Ideologies</category>
+    <order>200</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_PoliticalC</defName>
+    <label>Political C</label>
+    <texturePath>UI/Ideoligions/PoliticalC</texturePath>
+    <category>Ideologies</category>
+    <order>205</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_PoliticalD</defName>
+    <label>Political D</label>
+    <texturePath>UI/Ideoligions/PoliticalD</texturePath>
+    <category>Ideologies</category>
+    <order>210</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ReligionC</defName>
+    <label>Religion C</label>
+    <texturePath>UI/Ideoligions/ReligionC</texturePath>
+    <category>Ideologies</category>
+    <order>215</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ReligionD</defName>
+    <label>Religion D</label>
+    <texturePath>UI/Ideoligions/ReligionD</texturePath>
+    <category>Ideologies</category>
+    <order>220</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ReligionE</defName>
+    <label>Religion E</label>
+    <texturePath>UI/Ideoligions/ReligionE</texturePath>
+    <category>Ideologies</category>
+    <order>225</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_ScarHands</defName>
+    <label>Scar hands</label>
+    <texturePath>UI/Ideoligions/ScarHands</texturePath>
+    <category>Ideologies</category>
+    <order>230</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Skull</defName>
+    <label>Skull</label>
+    <texturePath>UI/Ideoligions/Skull</texturePath>
+    <category>Ideologies</category>
+    <order>235</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpikeyA</defName>
+    <label>Spikey A</label>
+    <texturePath>UI/Ideoligions/SpikeyA</texturePath>
+    <category>Ideologies</category>
+    <order>240</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpikeyB</defName>
+    <label>Spikey B</label>
+    <texturePath>UI/Ideoligions/SpikeyB</texturePath>
+    <category>Ideologies</category>
+    <order>245</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpikeyC</defName>
+    <label>Spikey C</label>
+    <texturePath>UI/Ideoligions/SpikeyC</texturePath>
+    <category>Ideologies</category>
+    <order>250</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpikeyD</defName>
+    <label>Spikey D</label>
+    <texturePath>UI/Ideoligions/SpikeyD</texturePath>
+    <category>Ideologies</category>
+    <order>255</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpikeyE</defName>
+    <label>Spikey E</label>
+    <texturePath>UI/Ideoligions/SpikeyE</texturePath>
+    <category>Ideologies</category>
+    <order>260</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_SpiralsA</defName>
+    <label>Spirals A</label>
+    <texturePath>UI/Ideoligions/SpiralsA</texturePath>
+    <category>Ideologies</category>
+    <order>265</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Steer</defName>
+    <label>Steer</label>
+    <texturePath>UI/Ideoligions/Steer</texturePath>
+    <category>Ideologies</category>
+    <order>270</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TechAtom</defName>
+    <label>Tech atom</label>
+    <texturePath>UI/Ideoligions/TechAtom</texturePath>
+    <category>Ideologies</category>
+    <order>275</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TechGearchains</defName>
+    <label>Tech gearchains</label>
+    <texturePath>UI/Ideoligions/TechGearchains</texturePath>
+    <category>Ideologies</category>
+    <order>280</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TechHand</defName>
+    <label>Tech hand</label>
+    <texturePath>UI/Ideoligions/TechHand</texturePath>
+    <category>Ideologies</category>
+    <order>285</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TechLighthouse</defName>
+    <label>Tech lighthouse</label>
+    <texturePath>UI/Ideoligions/TechLighthouse</texturePath>
+    <category>Ideologies</category>
+    <order>290</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TechPulse</defName>
+    <label>Tech pulse</label>
+    <texturePath>UI/Ideoligions/TechPulse</texturePath>
+    <category>Ideologies</category>
+    <order>295</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_Treeflat</defName>
+    <label>Tree flat</label>
+    <texturePath>UI/Ideoligions/Treeflat</texturePath>
+    <category>Ideologies</category>
+    <order>300</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TribalA</defName>
+    <label>Tribal A</label>
+    <texturePath>UI/Ideoligions/TribalA</texturePath>
+    <category>Ideologies</category>
+    <order>305</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TribalB</defName>
+    <label>Tribal B</label>
+    <texturePath>UI/Ideoligions/TribalB</texturePath>
+    <category>Ideologies</category>
+    <order>310</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TribalC</defName>
+    <label>Tribal C</label>
+    <texturePath>UI/Ideoligions/TribalC</texturePath>
+    <category>Ideologies</category>
+    <order>315</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TribalD</defName>
+    <label>Tribal D</label>
+    <texturePath>UI/Ideoligions/TribalD</texturePath>
+    <category>Ideologies</category>
+    <order>320</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>IdeoSpecific_TribalE</defName>
+    <label>Tribal E</label>
+    <texturePath>UI/Ideoligions/TribalE</texturePath>
+    <category>Ideologies</category>
+    <order>325</order>
+    <modRequired>Ideology</modRequired>
+  </CoatOfArms.EmblemDef>
+
+</Defs>

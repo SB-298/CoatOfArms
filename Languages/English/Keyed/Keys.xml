@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Gizmo -->
+  <CoA_EditCoatOfArms>Edit Coat of Arms</CoA_EditCoatOfArms>
+  <CoA_EditCoatOfArmsDesc>Open the coat of arms editor to design your faction's emblem.</CoA_EditCoatOfArmsDesc>
+
+  <!-- Editor tabs -->
+  <CoA_TabBackground>Background</CoA_TabBackground>
+  <CoA_TabEmblems>Emblems</CoA_TabEmblems>
+  <CoA_TabLayers>Layers</CoA_TabLayers>
+
+  <!-- Background panel -->
+  <CoA_Frame>Shape</CoA_Frame>
+  <CoA_None>None</CoA_None>
+  <CoA_Outline>Outline / border</CoA_Outline>
+  <CoA_OutlineWeight>Weight</CoA_OutlineWeight>
+  <CoA_BackgroundPattern>Pattern</CoA_BackgroundPattern>
+  <CoA_Colors>Colors</CoA_Colors>
+  <CoA_Primary>Primary</CoA_Primary>
+  <CoA_Secondary>Secondary</CoA_Secondary>
+  <CoA_Tertiary>Tertiary</CoA_Tertiary>
+
+  <!-- Emblem panel -->
+  <CoA_EmblemProperties>Properties: {0}</CoA_EmblemProperties>
+  <CoA_PositionX>X Position</CoA_PositionX>
+  <CoA_PositionY>Y Position</CoA_PositionY>
+  <CoA_Rotation>Rotation</CoA_Rotation>
+  <CoA_Scale>Scale</CoA_Scale>
+  <CoA_ScaleX>Scale X</CoA_ScaleX>
+  <CoA_ScaleY>Scale Y</CoA_ScaleY>
+  <CoA_ScaleLink>Link scale X and Y (click to link)</CoA_ScaleLink>
+  <CoA_ScaleUnlink>Unlink scale X and Y (click to unlink)</CoA_ScaleUnlink>
+  <CoA_FlipX>Flip X</CoA_FlipX>
+  <CoA_FlipY>Flip Y</CoA_FlipY>
+  <CoA_Color>Color</CoA_Color>
+  <CoA_Hex>Hex</CoA_Hex>
+  <CoA_Opacity>Opacity</CoA_Opacity>
+
+  <!-- Layer panel -->
+  <CoA_EmblemLayers>Emblem Layers</CoA_EmblemLayers>
+  <CoA_AddEmblem>Add new emblem</CoA_AddEmblem>
+  <CoA_DuplicateEmblem>Duplicate this emblem layer</CoA_DuplicateEmblem>
+  <CoA_NoEmblems>No emblems added. Use the Emblems tab to add one.</CoA_NoEmblems>
+  <CoA_EmblemLimitReached>Emblem limit reached ({0}). Remove an emblem first or increase the limit in mod settings.</CoA_EmblemLimitReached>
+
+  <!-- Buttons -->
+  <CoA_Presets>Presets</CoA_Presets>
+  <CoA_ExportImport>Export / Import</CoA_ExportImport>
+  <CoA_ExportImportTitle>Export / Import</CoA_ExportImportTitle>
+  <CoA_ExportPng>Export as PNG</CoA_ExportPng>
+  <CoA_Cancel>Cancel</CoA_Cancel>
+  <CoA_Revert>Revert to Vanilla</CoA_Revert>
+  <CoA_Apply>Apply</CoA_Apply>
+
+  <!-- Presets dialog -->
+  <CoA_ExportClipboard>Export to clipboard</CoA_ExportClipboard>
+  <CoA_ImportClipboard>Import from clipboard</CoA_ImportClipboard>
+  <CoA_ExportBtn>Export</CoA_ExportBtn>
+  <CoA_ImportBtn>Import</CoA_ImportBtn>
+  <CoA_SavedPresets>Saved presets (local, across saves)</CoA_SavedPresets>
+  <CoA_Load>Load</CoA_Load>
+  <CoA_Overwrite>Overwrite</CoA_Overwrite>
+  <CoA_Delete>Delete</CoA_Delete>
+  <CoA_OverwriteConfirm>A preset named "{0}" already exists. Overwrite it?</CoA_OverwriteConfirm>
+  <CoA_OverwriteConfirmRow>Replace preset "{0}" with your current design?</CoA_OverwriteConfirmRow>
+  <CoA_SaveAsPreset>Save current as preset</CoA_SaveAsPreset>
+  <CoA_SavePreset>Save preset</CoA_SavePreset>
+  <CoA_Exported>Exported to clipboard.</CoA_Exported>
+  <CoA_ExportedPng>Exported coat of arms to: {0}</CoA_ExportedPng>
+  <CoA_ExportPngFailed>Failed to export PNG.</CoA_ExportPngFailed>
+  <CoA_Imported>Design imported from clipboard.</CoA_Imported>
+  <CoA_ImportFailed>Clipboard did not contain valid coat of arms data.</CoA_ImportFailed>
+  <CoA_Loaded>Loaded preset: {0}</CoA_Loaded>
+  <CoA_LoadFailed>Failed to load preset: {0}</CoA_LoadFailed>
+  <CoA_Deleted>Deleted preset: {0}</CoA_Deleted>
+  <CoA_Saved>Saved as preset: {0}</CoA_Saved>
+  <CoA_SaveFailed>Failed to save preset.</CoA_SaveFailed>
+  <CoA_EnterName>Enter a name for the preset.</CoA_EnterName>
+
+  <!-- Settings -->
+  <CoA_SettingsEmblemLimit>Maximum emblem layers: {0}</CoA_SettingsEmblemLimit>
+  <CoA_SettingsResolutionLabel>Render resolution</CoA_SettingsResolutionLabel>
+  <CoA_ResolutionPx>{0} px</CoA_ResolutionPx>
+  <CoA_ResolutionTooltip>Used for faction icons everywhere: world map, colonist bar, faction list, etc.</CoA_ResolutionTooltip>
+  <CoA_OpenEditorInGameOnly>Start or load a game to edit your coat of arms.</CoA_OpenEditorInGameOnly>
+  <CoA_SettingsAllowEditOtherFactions>Allow editing other factions' coat of arms</CoA_SettingsAllowEditOtherFactions>
+  <CoA_SettingsAllowEditOtherFactionsTip>When enabled, the Edit Coat of Arms button appears on any settlement on the world map, not only your own. Otherwise only your settlements (or god mode) show it.</CoA_SettingsAllowEditOtherFactionsTip>
+  <CoA_SettingsExportFolderLabel>Image export folder</CoA_SettingsExportFolderLabel>
+  <CoA_SettingsExportFolderPrompt>Export folder path (leave empty for default)</CoA_SettingsExportFolderPrompt>
+  <CoA_ExportFolderPlaceholder>(default: mod folder / Exports)</CoA_ExportFolderPlaceholder>
+  <CoA_OpenExportFolder>Open image export folder</CoA_OpenExportFolder>
+
+</LanguageData>

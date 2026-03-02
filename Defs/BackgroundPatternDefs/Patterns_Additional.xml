@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Barruly1</defName>
+    <label>Barruly 1</label>
+    <texturePath>CoatOfArms/Backgrounds/Barruly1</texturePath>
+    <colorCount>2</colorCount>
+    <order>200</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Barry</defName>
+    <label>Barry</label>
+    <texturePath>CoatOfArms/Backgrounds/Barry</texturePath>
+    <colorCount>2</colorCount>
+    <order>210</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Barry2</defName>
+    <label>Barry 2</label>
+    <texturePath>CoatOfArms/Backgrounds/Barry2</texturePath>
+    <colorCount>2</colorCount>
+    <order>220</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Bend1</defName>
+    <label>Bend 1</label>
+    <texturePath>CoatOfArms/Backgrounds/Bend1</texturePath>
+    <colorCount>2</colorCount>
+    <order>230</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Bend2</defName>
+    <label>Bend 2</label>
+    <texturePath>CoatOfArms/Backgrounds/Bend2</texturePath>
+    <colorCount>2</colorCount>
+    <order>240</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Checkers</defName>
+    <label>Checkers</label>
+    <texturePath>CoatOfArms/Backgrounds/Checkers</texturePath>
+    <colorCount>2</colorCount>
+    <order>250</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Checkers2</defName>
+    <label>Checkers 2</label>
+    <texturePath>CoatOfArms/Backgrounds/Checkers2</texturePath>
+    <colorCount>2</colorCount>
+    <order>260</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Checkers6</defName>
+    <label>Checkers 6</label>
+    <texturePath>CoatOfArms/Backgrounds/Checkers6</texturePath>
+    <colorCount>2</colorCount>
+    <order>270</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Checkers8</defName>
+    <label>Checkers 8</label>
+    <texturePath>CoatOfArms/Backgrounds/Checkers8</texturePath>
+    <colorCount>2</colorCount>
+    <order>280</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Checkers12</defName>
+    <label>Checkers 12</label>
+    <texturePath>CoatOfArms/Backgrounds/Checkers12</texturePath>
+    <colorCount>2</colorCount>
+    <order>290</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>CheckersDiagonal</defName>
+    <label>Checkers diagonal</label>
+    <texturePath>CoatOfArms/Backgrounds/CheckersDiagonal</texturePath>
+    <colorCount>2</colorCount>
+    <order>300</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Chief</defName>
+    <label>Chief</label>
+    <texturePath>CoatOfArms/Backgrounds/Chief</texturePath>
+    <colorCount>2</colorCount>
+    <order>310</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>DiagonalSplit1</defName>
+    <label>Diagonal split 1</label>
+    <texturePath>CoatOfArms/Backgrounds/DiagonalSplit1</texturePath>
+    <colorCount>2</colorCount>
+    <order>320</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>DiagonalSplit2</defName>
+    <label>Diagonal split 2</label>
+    <texturePath>CoatOfArms/Backgrounds/DiagonalSplit2</texturePath>
+    <colorCount>2</colorCount>
+    <order>330</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalSplit1</defName>
+    <label>Horizontal split 1</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalSplit1</texturePath>
+    <colorCount>2</colorCount>
+    <order>340</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalSplit2</defName>
+    <label>Horizontal split 2</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalSplit2</texturePath>
+    <colorCount>2</colorCount>
+    <order>350</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalStripes1</defName>
+    <label>Horizontal stripes 1</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalStripes1</texturePath>
+    <colorCount>2</colorCount>
+    <order>360</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalStripes2</defName>
+    <label>Horizontal stripes 2</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalStripes2</texturePath>
+    <colorCount>2</colorCount>
+    <order>370</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalStripes3</defName>
+    <label>Horizontal stripes 3</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalStripes3</texturePath>
+    <colorCount>2</colorCount>
+    <order>380</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalStripes4</defName>
+    <label>Horizontal stripes 4</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalStripes4</texturePath>
+    <colorCount>2</colorCount>
+    <order>390</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>JaggedVerticalSplit</defName>
+    <label>Jagged vertical split</label>
+    <texturePath>CoatOfArms/Backgrounds/JaggedVerticalSplit</texturePath>
+    <colorCount>2</colorCount>
+    <order>400</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Quarter</defName>
+    <label>Quarter</label>
+    <texturePath>CoatOfArms/Backgrounds/Quarter</texturePath>
+    <colorCount>2</colorCount>
+    <order>410</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Shield</defName>
+    <label>Shield</label>
+    <texturePath>CoatOfArms/Backgrounds/Shield</texturePath>
+    <colorCount>2</colorCount>
+    <order>420</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>SmallShield</defName>
+    <label>Small shield</label>
+    <texturePath>CoatOfArms/Backgrounds/SmallShield</texturePath>
+    <colorCount>2</colorCount>
+    <order>430</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Triangle</defName>
+    <label>Triangle</label>
+    <texturePath>CoatOfArms/Backgrounds/Triangle</texturePath>
+    <colorCount>2</colorCount>
+    <order>440</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>VerticalStripes2</defName>
+    <label>Vertical stripes 2</label>
+    <texturePath>CoatOfArms/Backgrounds/VerticalStripes2</texturePath>
+    <colorCount>2</colorCount>
+    <order>450</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Waves</defName>
+    <label>Waves</label>
+    <texturePath>CoatOfArms/Backgrounds/Waves</texturePath>
+    <colorCount>2</colorCount>
+    <order>460</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>SaltireX</defName>
+    <label>Saltire</label>
+    <texturePath>CoatOfArms/Backgrounds/X</texturePath>
+    <colorCount>2</colorCount>
+    <order>470</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+</Defs>

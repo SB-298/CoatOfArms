@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Faction icons from Core and Biotech (World/WorldObjects/Expanding/*).
+  Core paths from Data/Core/Defs/FactionDefs/Factions_Misc.xml.
+  Biotech paths from Data/Biotech/Defs/FactionDefs/Factions_Misc.xml.
+  Textures are loaded from the game via ContentFinder; no mod assets needed.
+-->
+<Defs>
+
+  <!-- Core: Outlander, Tribal, Pirate faction icons -->
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_Town</defName>
+    <label>Town (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/Town</texturePath>
+    <category>Factions</category>
+    <order>0</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_TownRough</defName>
+    <label>Town rough (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/TownRough</texturePath>
+    <category>Factions</category>
+    <order>10</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_Village</defName>
+    <label>Village (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/Village</texturePath>
+    <category>Factions</category>
+    <order>20</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_VillageRough</defName>
+    <label>Village rough (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/VillageRough</texturePath>
+    <category>Factions</category>
+    <order>30</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_VillageSavage</defName>
+    <label>Village savage (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/VillageSavage</texturePath>
+    <category>Factions</category>
+    <order>40</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_PirateOutpost</defName>
+    <label>Pirate outpost (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/PirateOutpost</texturePath>
+    <category>Factions</category>
+    <order>50</order>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_SettlementTemporary</defName>
+    <label>Settlement temporary (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/SettlementTemporary</texturePath>
+    <category>Factions</category>
+    <order>60</order>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Royalty DLC: Shattered Empire faction icon -->
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_Empire</defName>
+    <label>Shattered empire (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/Empire</texturePath>
+    <category>Factions</category>
+    <order>70</order>
+    <modRequired>Royalty</modRequired>
+  </CoatOfArms.EmblemDef>
+
+  <!-- Biotech DLC faction icons -->
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_FierceNeanderthalTribe</defName>
+    <label>Fierce Neanderthal tribe (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/FierceNeanderthalTribe</texturePath>
+    <category>Factions</category>
+    <order>100</order>
+    <modRequired>Biotech</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_YttakinPirates</defName>
+    <label>Yttakin pirates (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/YttakinPirates</texturePath>
+    <category>Factions</category>
+    <order>110</order>
+    <modRequired>Biotech</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_SavageImpidTribe</defName>
+    <label>Savage impid tribe (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/SavageImpidTribe</texturePath>
+    <category>Factions</category>
+    <order>120</order>
+    <modRequired>Biotech</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_RoughPigUnion</defName>
+    <label>Rough pig union (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/RoughPigUnion</texturePath>
+    <category>Factions</category>
+    <order>130</order>
+    <modRequired>Biotech</modRequired>
+  </CoatOfArms.EmblemDef>
+  <CoatOfArms.EmblemDef>
+    <defName>FactionIcon_WasterPirates</defName>
+    <label>Waster pirates (faction icon)</label>
+    <texturePath>World/WorldObjects/Expanding/WasterPirates</texturePath>
+    <category>Factions</category>
+    <order>140</order>
+    <modRequired>Biotech</modRequired>
+  </CoatOfArms.EmblemDef>
+
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- CoatOfArms/Emblems/Symbols/... - defs for Castle, Dragon, Lion, Sun, Sword, Tree -->
+  <CoatOfArms.EmblemDef>
+    <defName>Castle</defName>
+    <label>Castle</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Castle</texturePath>
+    <category>Symbols</category>
+    <order>0</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Dragon</defName>
+    <label>Dragon</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Dragon</texturePath>
+    <category>Symbols</category>
+    <order>10</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Lion</defName>
+    <label>Lion</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Lion</texturePath>
+    <category>Symbols</category>
+    <order>20</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Sun</defName>
+    <label>Sun</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Sun</texturePath>
+    <category>Symbols</category>
+    <order>30</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Sword</defName>
+    <label>Sword</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Sword</texturePath>
+    <category>Symbols</category>
+    <order>40</order>
+  </CoatOfArms.EmblemDef>
+
+  <CoatOfArms.EmblemDef>
+    <defName>Tree</defName>
+    <label>Tree</label>
+    <texturePath>CoatOfArms/Emblems/Symbols/Tree</texturePath>
+    <category>Symbols</category>
+    <order>50</order>
+  </CoatOfArms.EmblemDef>
+
+</Defs>

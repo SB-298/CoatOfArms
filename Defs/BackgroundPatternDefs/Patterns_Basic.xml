@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Solid</defName>
+    <label>Solid</label>
+    <texturePath>CoatOfArms/Backgrounds/Solid</texturePath>
+    <colorCount>1</colorCount>
+    <order>0</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>VerticalHalves</defName>
+    <label>Vertical halves</label>
+    <texturePath>CoatOfArms/Backgrounds/VerticalHalves</texturePath>
+    <colorCount>2</colorCount>
+    <order>20</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Quarters</defName>
+    <label>Quarters</label>
+    <texturePath>CoatOfArms/Backgrounds/Quarters</texturePath>
+    <colorCount>2</colorCount>
+    <order>30</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>VerticalStripes</defName>
+    <label>Vertical stripes</label>
+    <texturePath>CoatOfArms/Backgrounds/VerticalStripes</texturePath>
+    <colorCount>2</colorCount>
+    <order>50</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Chevron</defName>
+    <label>Chevron</label>
+    <texturePath>CoatOfArms/Backgrounds/Chevron</texturePath>
+    <colorCount>2</colorCount>
+    <order>80</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>Cross</defName>
+    <label>Cross</label>
+    <texturePath>CoatOfArms/Backgrounds/Cross</texturePath>
+    <colorCount>2</colorCount>
+    <order>100</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+</Defs>

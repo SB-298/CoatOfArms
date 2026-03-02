@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CoatOfArms.FrameDef>
+    <defName>Square</defName>
+    <label>Square</label>
+    <texturePath>CoatOfArms/Frames/Square</texturePath>
+    <order>0</order>
+    <maskScale>1.14</maskScale>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Shield</defName>
+    <label>Shield</label>
+    <texturePath>CoatOfArms/Frames/Shield</texturePath>
+    <order>10</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Shield2</defName>
+    <label>Shield 2</label>
+    <texturePath>CoatOfArms/Frames/Shield2</texturePath>
+    <order>11</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Banner</defName>
+    <label>Banner</label>
+    <texturePath>CoatOfArms/Frames/Banner</texturePath>
+    <order>20</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Circle</defName>
+    <label>Circle</label>
+    <texturePath>CoatOfArms/Frames/Circle</texturePath>
+    <order>30</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Diamond</defName>
+    <label>Diamond</label>
+    <texturePath>CoatOfArms/Frames/Diamond</texturePath>
+    <order>40</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Hexagon</defName>
+    <label>Hexagon</label>
+    <texturePath>CoatOfArms/Frames/Hexagon</texturePath>
+    <order>50</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Badge1</defName>
+    <label>Badge 1</label>
+    <texturePath>CoatOfArms/Frames/Badge1</texturePath>
+    <order>52</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Badge2</defName>
+    <label>Badge 2</label>
+    <texturePath>CoatOfArms/Frames/Badge2</texturePath>
+    <order>53</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>Pentagon</defName>
+    <label>Pentagon</label>
+    <texturePath>CoatOfArms/Frames/Pentagon</texturePath>
+    <order>54</order>
+  </CoatOfArms.FrameDef>
+
+  <CoatOfArms.FrameDef>
+    <defName>PentagonDown</defName>
+    <label>Pentagon (down)</label>
+    <texturePath>CoatOfArms/Frames/PentagonDown</texturePath>
+    <order>55</order>
+  </CoatOfArms.FrameDef>
+
+</Defs>

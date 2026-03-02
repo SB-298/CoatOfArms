@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Coat of Arms</name>
+  <author>Kiero298</author>
+  <packageId>kiero298.coatofarms</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Design your own coat of arms using a layered editor with background patterns, colors, and emblems. Use it as your faction icon on the world map.</description>
+</ModMetaData>
