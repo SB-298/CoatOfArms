@@ -28,9 +28,9 @@ public static class Panel_Emblems
         bool hasSelection = selected >= 0 && selected < data.emblems.Count;
         float propsHeight = hasSelection ? 398f : 0f;
 
-        Rect catRect = new Rect(rect.x, cursor, rect.width, 28f);
+        Rect catRect = new Rect(rect.x, cursor, rect.width, 32f);
         DrawCategoryBar(catRect);
-        cursor += 32f;
+        cursor += 36f;
 
         float gridHeight = rect.height - (cursor - rect.y) - propsHeight - 8f;
         if (gridHeight < 80f)
@@ -74,16 +74,13 @@ public static class Panel_Emblems
             }
         }
 
-        Text.Font = GameFont.Tiny;
-        float minButtonWidth = 0f;
-        foreach (string category in cachedCategories)
-        {
-            float needed = Text.CalcSize(category).x + 10f;
-            if (needed > minButtonWidth)
-                minButtonWidth = needed;
-        }
         Text.Font = GameFont.Small;
-        float buttonWidth = Mathf.Max(minButtonWidth, Mathf.Min(100f, rect.width / cachedCategories.Count));
+
+        float gapTotal = (cachedCategories.Count - 1) * 2f;
+        float availableWidth = rect.width - gapTotal;
+        float buttonWidth = availableWidth / cachedCategories.Count;
+        buttonWidth = Mathf.Min(100f, buttonWidth);
+
         float x = rect.x;
 
         foreach (string category in cachedCategories)

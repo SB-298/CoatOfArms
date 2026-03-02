@@ -10,6 +10,7 @@ namespace CoatOfArms;
 public static class Panel_Background
 {
     private static Vector2 scrollPosition;
+    private static Vector2 colorScrollPosition;
     private static Dictionary<string, Texture2D> thumbnailCacheByFrame = new Dictionary<string, Texture2D>();
     private static Texture2D nonePatternThumbnail;
     private static Color cachedPrimary;
@@ -73,7 +74,19 @@ public static class Panel_Background
         if (data.frame != null)
         {
             Rect colorArea = new Rect(rect.x, cursor, rect.width, rect.yMax - cursor);
-            changed |= DrawColorPickers(colorArea, data);
+            float colorContentHeight = ColorSectionHeight(data);
+            if (colorContentHeight > colorArea.height && colorArea.height > 0f)
+            {
+                Rect colorViewRect = new Rect(0f, 0f, colorArea.width - 16f, colorContentHeight);
+                Widgets.BeginScrollView(colorArea, ref colorScrollPosition, colorViewRect);
+                Rect colorContentRect = new Rect(0f, 0f, colorViewRect.width, colorContentHeight);
+                changed |= DrawColorPickers(colorContentRect, data);
+                Widgets.EndScrollView();
+            }
+            else
+            {
+                changed |= DrawColorPickers(colorArea, data);
+            }
         }
 
         return changed;

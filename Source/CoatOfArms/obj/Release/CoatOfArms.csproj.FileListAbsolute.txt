@@ -3,3 +3,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\Co
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\1.6\Assemblies\CoatOfArms.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.dll
+F:\Mod Development\Rimworld Modding\CoatOfArms\1.6\Assemblies\CoatOfArms.dll
+F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.csproj.AssemblyReference.cache
+F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
+F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.csproj.CoreCompileInputs.cache
+F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Release\CoatOfArms.dll

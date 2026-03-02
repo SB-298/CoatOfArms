@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = CoatOfArms
-build_property.ProjectDir = C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\
+build_property.ProjectDir = F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Three-colour patterns: mask uses R = primary, G = secondary, B = tertiary -->
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>VerticalThirdsThree</defName>
+    <label>Vertical thirds (3 colours)</label>
+    <texturePath>CoatOfArms/Backgrounds/VerticalThirdsThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>121</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>HorizontalThirdsThree</defName>
+    <label>Horizontal thirds (3 colours)</label>
+    <texturePath>CoatOfArms/Backgrounds/HorizontalThirdsThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>122</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>QuartersThree</defName>
+    <label>Quarters (3 colours)</label>
+    <texturePath>CoatOfArms/Backgrounds/QuartersThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>123</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>DiagonalThree</defName>
+    <label>Diagonal thirds</label>
+    <texturePath>CoatOfArms/Backgrounds/DiagonalThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>124</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>CheckersThree</defName>
+    <label>Checkers (3 colours)</label>
+    <texturePath>CoatOfArms/Backgrounds/CheckersThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>125</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+  <CoatOfArms.BackgroundPatternDef>
+    <defName>BendThree</defName>
+    <label>Bend (3 colours)</label>
+    <texturePath>CoatOfArms/Backgrounds/BendThree</texturePath>
+    <colorCount>3</colorCount>
+    <order>126</order>
+  </CoatOfArms.BackgroundPatternDef>
+
+</Defs>

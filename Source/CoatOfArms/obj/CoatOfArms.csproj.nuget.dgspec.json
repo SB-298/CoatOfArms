@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj": {}
+    "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj": {
+    "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
+        "projectUniqueName": "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
         "projectName": "CoatOfArms",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
+        "projectPath": "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
         "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\obj\\",
+        "outputPath": "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

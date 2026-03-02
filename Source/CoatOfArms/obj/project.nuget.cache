@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lYlvflzfKTc=",
+  "dgSpecHash": "8RrcF4GOdIk=",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
+  "projectFilePath": "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samuel\\.nuget\\packages\\krafs.publicizer\\2.3.0\\krafs.publicizer.2.3.0.nupkg.sha512",
     "C:\\Users\\Samuel\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4503-beta\\krafs.rimworld.ref.1.6.4503-beta.nupkg.sha512",

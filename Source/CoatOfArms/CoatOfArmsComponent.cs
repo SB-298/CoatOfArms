@@ -12,8 +12,8 @@ public class CoatOfArmsComponent : GameComponent
 {
     public static CoatOfArmsComponent Instance;
 
-    /// <summary>Player faction vanilla icon tint (hex 00bcd8).</summary>
-    private static readonly Color PlayerFactionVanillaIconTint = new Color(0f, 188f / 255f, 216f / 255f, 1f);
+    /// <summary>Player faction vanilla icon tint (brighter cyan so reverted icon is clearly visible).</summary>
+    private static readonly Color PlayerFactionVanillaIconTint = new Color(0f, 212f / 255f, 255f / 255f, 1f);
 
     public CoatOfArmsData data = new CoatOfArmsData();
     public bool enabled;
