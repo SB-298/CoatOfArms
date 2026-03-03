@@ -22,6 +22,7 @@ public class CoatOfArmsComponent : GameComponent
     private static Texture2D vanillaIcon;
 
     public Dictionary<string, CoatOfArmsData> otherFactionData = new Dictionary<string, CoatOfArmsData>();
+    private Dictionary<string, Texture2D> factionTextures = new Dictionary<string, Texture2D>();
     private List<FactionCoatOfArmsEntry> otherFactionDataList = new List<FactionCoatOfArmsEntry>();
 
     public CoatOfArmsComponent(Game game)
@@ -91,6 +92,18 @@ public class CoatOfArmsComponent : GameComponent
         return otherFactionData.ContainsKey(faction.GetUniqueLoadID());
     }
 
+    public Texture2D GetRenderedTexture(Faction faction)
+    {
+        if (faction == null)
+            return null;
+        if (faction.IsPlayer)
+            return Rendered;
+        string key = faction.GetUniqueLoadID();
+        if (factionTextures.TryGetValue(key, out Texture2D texture))
+            return texture;
+        return null;
+    }
+
     public void ApplyToFaction(Faction faction)
     {
         if (faction == null || faction.def == null)
@@ -110,7 +123,7 @@ public class CoatOfArmsComponent : GameComponent
             int resolution = CoatOfArmsSettings.Resolution;
             Texture2D texture = CoatOfArmsRenderer.Render(coatOfArms, resolution);
             if (texture != null)
-                faction.def.factionIcon = texture;
+                factionTextures[key] = texture;
         }
         catch (Exception ex)
         {
@@ -129,8 +142,7 @@ public class CoatOfArmsComponent : GameComponent
         }
         string key = faction.GetUniqueLoadID();
         otherFactionData.Remove(key);
-        Texture2D vanilla = GetVanillaFactionIcon(faction.def);
-        SetFactionIcon(faction.def, vanilla);
+        factionTextures.Remove(key);
     }
 
     public void Apply()
@@ -157,6 +169,7 @@ public class CoatOfArmsComponent : GameComponent
     {
         Instance = this;
         base.StartedNewGame();
+        factionTextures.Clear();
         LongEventHandler.ExecuteWhenFinished(delegate
         {
             ResetAllFactionDefIconsToVanilla();
@@ -168,6 +181,7 @@ public class CoatOfArmsComponent : GameComponent
     {
         Instance = this;
         base.LoadedGame();
+        factionTextures.Clear();
 
         LongEventHandler.ExecuteWhenFinished(delegate
         {
@@ -185,6 +199,7 @@ public class CoatOfArmsComponent : GameComponent
     {
         Instance = this;
         base.FinalizeInit();
+        factionTextures.Clear();
 
         LongEventHandler.ExecuteWhenFinished(delegate
         {

@@ -16,7 +16,7 @@ public static class Patch_ExpandingIcon
         if (!CoatOfArmsComponent.Instance.HasCustomCoatOfArms(settlement.Faction))
             return true;
 
-        Texture2D texture = settlement.Faction.def.factionIcon;
+        Texture2D texture = CoatOfArmsComponent.Instance.GetRenderedTexture(settlement.Faction);
         if (texture != null)
         {
             __result = texture;

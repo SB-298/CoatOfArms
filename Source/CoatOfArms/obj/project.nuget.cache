@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8RrcF4GOdIk=",
+  "dgSpecHash": "xIwGyQxZPlQ=",
   "success": true,
-  "projectFilePath": "F:\\Mod Development\\Rimworld Modding\\CoatOfArms\\Source\\CoatOfArms\\CoatOfArms.csproj",
+  "projectFilePath": "/workspace/Source/CoatOfArms/CoatOfArms.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Samuel\\.nuget\\packages\\krafs.publicizer\\2.3.0\\krafs.publicizer.2.3.0.nupkg.sha512",
-    "C:\\Users\\Samuel\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4503-beta\\krafs.rimworld.ref.1.6.4503-beta.nupkg.sha512",
-    "C:\\Users\\Samuel\\.nuget\\packages\\lib.harmony\\2.4.2\\lib.harmony.2.4.2.nupkg.sha512"
+    "/home/ubuntu/.nuget/packages/krafs.publicizer/2.3.0/krafs.publicizer.2.3.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/krafs.rimworld.ref/1.6.4503-beta/krafs.rimworld.ref.1.6.4503-beta.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/lib.harmony/2.4.2/lib.harmony.2.4.2.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
   ],
   "logs": []
 }

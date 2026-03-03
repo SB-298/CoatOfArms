@@ -1,10 +1,15 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\1.6\Assemblies\CoatOfArms.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.dll
-F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.csproj.AssemblyReference.cache
-F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
-F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.csproj.CoreCompileInputs.cache
-F:\Mod Development\Rimworld Modding\CoatOfArms\Source\CoatOfArms\obj\Debug\CoatOfArms.dll
-F:\Mod Development\Rimworld Modding\CoatOfArms\1.6\Assemblies\CoatOfArms.dll
+C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.AssemblyReference.cache
+C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
+C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.CoreCompileInputs.cache
+C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/CoatOfArms/1.6/Assemblies/CoatOfArms.dll
+C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.dll
+F:/Mod Development/Rimworld Modding/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.AssemblyReference.cache
+F:/Mod Development/Rimworld Modding/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
+F:/Mod Development/Rimworld Modding/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.CoreCompileInputs.cache
+F:/Mod Development/Rimworld Modding/CoatOfArms/Source/CoatOfArms/obj/Debug/CoatOfArms.dll
+F:/Mod Development/Rimworld Modding/CoatOfArms/1.6/Assemblies/CoatOfArms.dll
+/workspace/1.6/Assemblies/CoatOfArms.dll
+/workspace/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.AssemblyReference.cache
+/workspace/Source/CoatOfArms/obj/Debug/CoatOfArms.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/Source/CoatOfArms/obj/Debug/CoatOfArms.csproj.CoreCompileInputs.cache
+/workspace/Source/CoatOfArms/obj/Debug/CoatOfArms.dll
