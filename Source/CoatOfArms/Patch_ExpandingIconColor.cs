@@ -13,10 +13,33 @@ public static class Patch_ExpandingIconColor
             return true;
         if (__instance is not Settlement settlement || settlement.Faction == null)
             return true;
-        if (!CoatOfArmsComponent.Instance.HasCustomCoatOfArms(settlement.Faction))
-            return true;
 
-        __result = Color.white;
-        return false;
+        bool hasCustom = CoatOfArmsComponent.Instance.HasCustomCoatOfArms(settlement.Faction);
+
+        if (Patch_ExpandableWorldObjectsOnGUI.Drawing)
+        {
+            if (hasCustom)
+            {
+                Texture2D texture = CoatOfArmsComponent.Instance.GetTextureForFaction(settlement.Faction);
+                if (texture != null)
+                {
+                    Patch_ExpandableWorldObjectsOnGUI.SaveAndSwap(settlement.Faction.def, texture);
+                    __result = Color.white;
+                    return false;
+                }
+            }
+            else
+            {
+                Patch_ExpandableWorldObjectsOnGUI.Restore(settlement.Faction.def);
+            }
+        }
+
+        if (settlement.Faction.IsPlayer && hasCustom)
+        {
+            __result = Color.white;
+            return false;
+        }
+
+        return true;
     }
 }

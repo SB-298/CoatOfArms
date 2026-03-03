@@ -86,9 +86,13 @@
   <CoA_OpenEditorInGameOnly>Start or load a game to edit your coat of arms.</CoA_OpenEditorInGameOnly>
   <CoA_SettingsAllowEditOtherFactions>Allow editing other factions' coat of arms</CoA_SettingsAllowEditOtherFactions>
   <CoA_SettingsAllowEditOtherFactionsTip>When enabled, the Edit Coat of Arms button appears on any settlement on the world map, not only your own. Otherwise only your settlements (or god mode) show it.</CoA_SettingsAllowEditOtherFactionsTip>
+  <CoA_SettingsVanillaIconScale>Vanilla icon scale: {0}x</CoA_SettingsVanillaIconScale>
+  <CoA_SettingsCoatIconScale>Coat of arms icon scale: {0}x</CoA_SettingsCoatIconScale>
+  <CoA_SettingsIconScaleTip>Scales faction icons on the world map. Does not affect faction list or other UI.</CoA_SettingsIconScaleTip>
   <CoA_SettingsExportFolderLabel>Image export folder</CoA_SettingsExportFolderLabel>
   <CoA_SettingsExportFolderPrompt>Export folder path (leave empty for default)</CoA_SettingsExportFolderPrompt>
   <CoA_ExportFolderPlaceholder>(default: mod folder / Exports)</CoA_ExportFolderPlaceholder>
   <CoA_OpenExportFolder>Open image export folder</CoA_OpenExportFolder>
+  <CoA_OpenPresetsFolder>Open presets folder</CoA_OpenPresetsFolder>
 
 </LanguageData>

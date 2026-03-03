@@ -12,31 +12,66 @@ namespace CoatOfArms;
 public static class CoatOfArmsPresets
 {
     private const string PresetsFolderName = "Presets";
+    private const string ExportsFolderName = "Exports";
+    private const string DataFolderName = "CoatOfArms";
     private const string Extension = ".coa.txt";
+
+    private static string cachedDataDir;
+    private static string cachedBundledDir;
+
+    /// <summary>Writable data directory under RimWorld's save data folder.</summary>
+    public static string GetDataDirectory()
+    {
+        if (cachedDataDir == null)
+            cachedDataDir = Path.Combine(GenFilePaths.SaveDataFolderPath, DataFolderName);
+        return cachedDataDir;
+    }
+
+    /// <summary>Bundled presets shipped with the mod (may be read-only on Workshop installs).</summary>
+    public static string GetBundledPresetsDirectory()
+    {
+        if (cachedBundledDir == null)
+        {
+            ModContentPack pack = LoadedModManager.RunningMods?.FirstOrDefault(m => m.PackageId == "kiero298.coatofarms");
+            if (pack != null)
+                cachedBundledDir = Path.Combine(pack.RootDir, PresetsFolderName);
+        }
+        return cachedBundledDir;
+    }
 
     public static string GetPresetsDirectory()
     {
-        ModContentPack pack = LoadedModManager.RunningMods?.FirstOrDefault(m => m.PackageId == "kiero298.coatofarms");
-        if (pack == null)
-            return null;
-        return Path.Combine(pack.RootDir, PresetsFolderName);
+        return Path.Combine(GetDataDirectory(), PresetsFolderName);
     }
 
     public static string GetExportsDirectory()
     {
         if (!string.IsNullOrWhiteSpace(CoatOfArmsSettings.ExportFolderOverride))
             return CoatOfArmsSettings.ExportFolderOverride.Trim();
-        string presetsDir = GetPresetsDirectory();
-        if (string.IsNullOrEmpty(presetsDir))
-            return null;
-        return Path.Combine(Path.GetDirectoryName(presetsDir), "Exports");
+        return Path.Combine(GetDataDirectory(), ExportsFolderName);
     }
 
-    public static void EnsureExportsDirectoryExists()
+    public static void EnsureDirectoryExists(string dir)
     {
-        string dir = GetExportsDirectory();
         if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
             Directory.CreateDirectory(dir);
+    }
+
+    /// <summary>Creates the presets folder if needed and opens it in the system file manager.</summary>
+    public static void OpenPresetsFolder()
+    {
+        string dir = GetPresetsDirectory();
+        if (string.IsNullOrEmpty(dir))
+            return;
+        EnsureDirectoryExists(dir);
+        try
+        {
+            Process.Start(new ProcessStartInfo { FileName = dir, UseShellExecute = true });
+        }
+        catch (Exception ex)
+        {
+            Log.Warning("[CoatOfArms] Could not open presets folder: " + ex.Message);
+        }
     }
 
     /// <summary>Creates the exports folder if needed and opens it in the system file manager.</summary>
@@ -45,7 +80,7 @@ public static class CoatOfArmsPresets
         string dir = GetExportsDirectory();
         if (string.IsNullOrEmpty(dir))
             return;
-        EnsureExportsDirectoryExists();
+        EnsureDirectoryExists(dir);
         try
         {
             Process.Start(new ProcessStartInfo { FileName = dir, UseShellExecute = true });
@@ -56,21 +91,39 @@ public static class CoatOfArmsPresets
         }
     }
 
-    public static void EnsurePresetsDirectoryExists()
+    /// <summary>Copies bundled presets into the user presets folder if they don't already exist there.</summary>
+    public static void CopyBundledPresets()
     {
-        string dir = GetPresetsDirectory();
-        if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
-            Directory.CreateDirectory(dir);
+        string bundledDir = GetBundledPresetsDirectory();
+        if (string.IsNullOrEmpty(bundledDir) || !Directory.Exists(bundledDir))
+            return;
+
+        string userDir = GetPresetsDirectory();
+        EnsureDirectoryExists(userDir);
+
+        foreach (string source in Directory.GetFiles(bundledDir, "*" + Extension))
+        {
+            string fileName = Path.GetFileName(source);
+            string destination = Path.Combine(userDir, fileName);
+            if (!File.Exists(destination))
+            {
+                try
+                {
+                    File.Copy(source, destination);
+                }
+                catch (Exception ex)
+                {
+                    Log.Warning("[CoatOfArms] Failed to copy bundled preset " + fileName + ": " + ex.Message);
+                }
+            }
+        }
     }
 
-    public static List<string> GetPresetNames()
+    private static void CollectPresetNames(string directory, HashSet<string> names)
     {
-        string dir = GetPresetsDirectory();
-        if (string.IsNullOrEmpty(dir) || !Directory.Exists(dir))
-            return new List<string>();
-
-        List<string> names = new List<string>();
-        foreach (string path in Directory.GetFiles(dir, "*" + Extension))
+        if (string.IsNullOrEmpty(directory) || !Directory.Exists(directory))
+            return;
+        foreach (string path in Directory.GetFiles(directory, "*" + Extension))
         {
             string name = Path.GetFileNameWithoutExtension(path);
             if (name.EndsWith(".coa"))
@@ -79,8 +132,15 @@ public static class CoatOfArmsPresets
                 name = Path.GetFileNameWithoutExtension(path);
             names.Add(name);
         }
-        names.Sort();
-        return names;
+    }
+
+    public static List<string> GetPresetNames()
+    {
+        HashSet<string> names = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        CollectPresetNames(GetPresetsDirectory(), names);
+        List<string> sorted = new List<string>(names);
+        sorted.Sort();
+        return sorted;
     }
 
     public static bool SavePreset(string name, CoatOfArmsData data)
@@ -89,10 +149,7 @@ public static class CoatOfArmsPresets
             return false;
 
         string dir = GetPresetsDirectory();
-        if (string.IsNullOrEmpty(dir))
-            return false;
-
-        EnsurePresetsDirectoryExists();
+        EnsureDirectoryExists(dir);
         string safeName = SanitizeFileName(name);
         string path = Path.Combine(dir, safeName + Extension);
         string content = CoatOfArmsSerializer.ToString(data);
@@ -167,7 +224,7 @@ public static class CoatOfArmsPresets
         return builder.Length > 0 ? builder.ToString() : "Preset";
     }
 
-    /// <summary>Renders the coat of arms at high resolution and saves as PNG. Returns the full path if successful, null otherwise.</summary>
+    /// <summary>Renders the coat of arms at high resolution and saves as PNG.</summary>
     public static string ExportAsPng(CoatOfArmsData data)
     {
         if (data == null)
@@ -177,7 +234,7 @@ public static class CoatOfArmsPresets
         if (string.IsNullOrEmpty(dir))
             return null;
 
-        EnsureExportsDirectoryExists();
+        EnsureDirectoryExists(dir);
 
         string fileName = string.Format("CoatOfArms_{0:yyyy-MM-dd_HH-mm-ss}.png", DateTime.Now);
         string path = Path.Combine(dir, fileName);
@@ -196,5 +253,14 @@ public static class CoatOfArmsPresets
             if (texture != null)
                 UnityEngine.Object.Destroy(texture);
         }
+    }
+
+    /// <summary>Logs resolved paths on startup for debugging.</summary>
+    public static void LogPaths()
+    {
+        Log.Message("[CoatOfArms] Data directory: " + GetDataDirectory());
+        Log.Message("[CoatOfArms] Presets: " + GetPresetsDirectory());
+        Log.Message("[CoatOfArms] Bundled presets: " + (GetBundledPresetsDirectory() ?? "(not found)"));
+        Log.Message("[CoatOfArms] Exports: " + GetExportsDirectory());
     }
 }

@@ -10,7 +10,10 @@ public class CoatOfArmsSettings : ModSettings
     public static string ExportFolderOverride = null;
     /// <summary>When true, the Edit Coat of Arms gizmo appears on non-player settlements without god mode.</summary>
     public static bool AllowEditOtherFactions = false;
-
+    /// <summary>Scale multiplier for vanilla faction icons on the world map.</summary>
+    public static float VanillaIconScale = 1f;
+    /// <summary>Scale multiplier for coat of arms icons on the world map.</summary>
+    public static float CoatIconScale = 1f;
     public static readonly int[] PredefinedResolutions = { 64, 128, 256, 512 };
 
     public override void ExposeData()
@@ -20,5 +23,7 @@ public class CoatOfArmsSettings : ModSettings
         Scribe_Values.Look(ref Resolution, "resolution", 128);
         Scribe_Values.Look(ref ExportFolderOverride, "exportFolderOverride", null);
         Scribe_Values.Look(ref AllowEditOtherFactions, "allowEditOtherFactions", false);
+        Scribe_Values.Look(ref VanillaIconScale, "vanillaIconScale", 1f);
+        Scribe_Values.Look(ref CoatIconScale, "coatIconScale", 1f);
     }
 }

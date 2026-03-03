@@ -146,6 +146,11 @@ public class Dialog_CoatOfArmsPresets : Window
         cursor += 32f;
 
         Rect saveRect = new Rect(rect.x, cursor, buttonWidth, rowHeight);
+        Rect openFolderRect = new Rect(rect.x + buttonWidth + gap, cursor, rect.width - buttonWidth - gap, rowHeight);
+        if (Widgets.ButtonText(openFolderRect, "CoA_OpenPresetsFolder".Translate()))
+        {
+            CoatOfArmsPresets.OpenPresetsFolder();
+        }
         if (Widgets.ButtonText(saveRect, "CoA_SavePreset".Translate()))
         {
             if (string.IsNullOrWhiteSpace(saveName))

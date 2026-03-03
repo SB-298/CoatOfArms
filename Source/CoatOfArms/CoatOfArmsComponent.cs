@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -23,6 +22,8 @@ public class CoatOfArmsComponent : GameComponent
 
     public Dictionary<string, CoatOfArmsData> otherFactionData = new Dictionary<string, CoatOfArmsData>();
     private List<FactionCoatOfArmsEntry> otherFactionDataList = new List<FactionCoatOfArmsEntry>();
+
+    public Dictionary<string, Texture2D> otherFactionRenderedTextures = new Dictionary<string, Texture2D>();
 
     public CoatOfArmsComponent(Game game)
     {
@@ -91,6 +92,28 @@ public class CoatOfArmsComponent : GameComponent
         return otherFactionData.ContainsKey(faction.GetUniqueLoadID());
     }
 
+    public Texture2D GetTextureForFaction(Faction faction)
+    {
+        if (faction == null || !HasCustomCoatOfArms(faction))
+            return null;
+        if (faction.IsPlayer)
+            return Rendered;
+        string key = faction.GetUniqueLoadID();
+        if (otherFactionRenderedTextures.TryGetValue(key, out Texture2D cached))
+            return cached;
+        if (otherFactionData.TryGetValue(key, out CoatOfArmsData coatOfArms) && coatOfArms != null)
+        {
+            int resolution = CoatOfArmsSettings.Resolution;
+            Texture2D texture = CoatOfArmsRenderer.Render(coatOfArms, resolution);
+            if (texture != null)
+            {
+                otherFactionRenderedTextures[key] = texture;
+                return texture;
+            }
+        }
+        return null;
+    }
+
     public void ApplyToFaction(Faction faction)
     {
         if (faction == null || faction.def == null)
@@ -110,7 +133,7 @@ public class CoatOfArmsComponent : GameComponent
             int resolution = CoatOfArmsSettings.Resolution;
             Texture2D texture = CoatOfArmsRenderer.Render(coatOfArms, resolution);
             if (texture != null)
-                faction.def.factionIcon = texture;
+                otherFactionRenderedTextures[key] = texture;
         }
         catch (Exception ex)
         {
@@ -129,8 +152,7 @@ public class CoatOfArmsComponent : GameComponent
         }
         string key = faction.GetUniqueLoadID();
         otherFactionData.Remove(key);
-        Texture2D vanilla = GetVanillaFactionIcon(faction.def);
-        SetFactionIcon(faction.def, vanilla);
+        otherFactionRenderedTextures.Remove(key);
     }
 
     public void Apply()
@@ -174,7 +196,7 @@ public class CoatOfArmsComponent : GameComponent
             ResetAllFactionDefIconsToVanilla();
 
             if (Faction.OfPlayer?.def != null)
-                SetFactionIcon(Faction.OfPlayer.def, GetVanillaFactionIconWithTint(Faction.OfPlayer.def));
+                Faction.OfPlayer.def.factionIcon = GetVanillaFactionIconWithTint(Faction.OfPlayer.def);
 
             Apply();
             ApplyOtherFactionIconsWhenReady();
@@ -191,7 +213,7 @@ public class CoatOfArmsComponent : GameComponent
             ResetAllFactionDefIconsToVanilla();
 
             if (Faction.OfPlayer?.def != null)
-                SetFactionIcon(Faction.OfPlayer.def, GetVanillaFactionIconWithTint(Faction.OfPlayer.def));
+                Faction.OfPlayer.def.factionIcon = GetVanillaFactionIconWithTint(Faction.OfPlayer.def);
 
             Apply();
             ApplyOtherFactionIconsWhenReady();
@@ -224,22 +246,7 @@ public class CoatOfArmsComponent : GameComponent
         enabled = false;
         if (Faction.OfPlayer?.def == null)
             return;
-        Texture2D vanilla = GetVanillaFactionIconWithTint(Faction.OfPlayer.def);
-        SetFactionIcon(Faction.OfPlayer.def, vanilla);
-    }
-
-    private static void SetFactionIcon(FactionDef factionDef, Texture2D texture)
-    {
-        if (factionDef == null)
-            return;
-        FieldInfo field = typeof(FactionDef).GetField("factionIcon",
-            BindingFlags.NonPublic | BindingFlags.Instance);
-        if (field == null)
-        {
-            Log.Error("[CoatOfArms] FactionDef.factionIcon field not found. RimWorld may have changed.");
-            return;
-        }
-        field.SetValue(factionDef, texture);
+        Faction.OfPlayer.def.factionIcon = GetVanillaFactionIconWithTint(Faction.OfPlayer.def);
     }
 
     private static Texture2D GetVanillaFactionIcon(FactionDef factionDef)
@@ -277,8 +284,7 @@ public class CoatOfArmsComponent : GameComponent
         {
             if (factionDef == null || factionDef.factionIconPath.NullOrEmpty())
                 continue;
-            Texture2D vanilla = GetVanillaFactionIconWithTint(factionDef);
-            SetFactionIcon(factionDef, vanilla);
+            factionDef.factionIcon = GetVanillaFactionIconWithTint(factionDef);
         }
     }
 

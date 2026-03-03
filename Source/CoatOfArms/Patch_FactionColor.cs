@@ -14,7 +14,18 @@ public static class Patch_FactionColor
         if (!CoatOfArmsComponent.Instance.HasCustomCoatOfArms(__instance))
             return true;
 
-        __result = Color.white;
-        return false;
+        if (__instance.IsPlayer)
+        {
+            __result = Color.white;
+            return false;
+        }
+
+        if (Patch_DrawFactionRow.CurrentFaction == __instance)
+        {
+            __result = Color.white;
+            return false;
+        }
+
+        return true;
     }
 }
