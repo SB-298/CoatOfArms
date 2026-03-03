@@ -255,12 +255,4 @@ public static class CoatOfArmsPresets
         }
     }
 
-    /// <summary>Logs resolved paths on startup for debugging.</summary>
-    public static void LogPaths()
-    {
-        Log.Message("[CoatOfArms] Data directory: " + GetDataDirectory());
-        Log.Message("[CoatOfArms] Presets: " + GetPresetsDirectory());
-        Log.Message("[CoatOfArms] Bundled presets: " + (GetBundledPresetsDirectory() ?? "(not found)"));
-        Log.Message("[CoatOfArms] Exports: " + GetExportsDirectory());
-    }
 }

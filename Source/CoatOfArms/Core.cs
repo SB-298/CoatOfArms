@@ -9,7 +9,6 @@ public static class Core
     static Core()
     {
         new Harmony("kiero298.coatofarms").PatchAll();
-        CoatOfArmsPresets.LogPaths();
         CoatOfArmsPresets.CopyBundledPresets();
     }
 }
