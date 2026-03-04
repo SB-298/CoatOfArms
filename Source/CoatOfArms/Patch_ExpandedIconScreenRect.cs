@@ -9,10 +9,9 @@ public static class Patch_ExpandedIconScreenRect
 {
     public static void Postfix(WorldObject o, ref Rect __result)
     {
-        bool hasCoat = o is Settlement settlement
-            && settlement.Faction != null
+        bool hasCoat = o.Faction != null
             && CoatOfArmsComponent.Instance != null
-            && CoatOfArmsComponent.Instance.HasCustomCoatOfArms(settlement.Faction);
+            && CoatOfArmsComponent.Instance.HasCustomCoatOfArms(o.Faction);
 
         float scale = hasCoat ? CoatOfArmsSettings.CoatIconScale : CoatOfArmsSettings.VanillaIconScale;
         if (scale == 1f)

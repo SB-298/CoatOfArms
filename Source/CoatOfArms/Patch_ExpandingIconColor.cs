@@ -7,34 +7,35 @@ namespace CoatOfArms;
 [HarmonyPatch(typeof(WorldObject), nameof(WorldObject.ExpandingIconColor), MethodType.Getter)]
 public static class Patch_ExpandingIconColor
 {
+    [HarmonyPriority(Priority.Last)]
     public static bool Prefix(WorldObject __instance, ref Color __result)
     {
         if (CoatOfArmsComponent.Instance == null)
             return true;
-        if (__instance is not Settlement settlement || settlement.Faction == null)
+        if (__instance.Faction == null)
             return true;
 
-        bool hasCustom = CoatOfArmsComponent.Instance.HasCustomCoatOfArms(settlement.Faction);
+        bool hasCustom = CoatOfArmsComponent.Instance.HasCustomCoatOfArms(__instance.Faction);
 
         if (Patch_ExpandableWorldObjectsOnGUI.Drawing)
         {
             if (hasCustom)
             {
-                Texture2D texture = CoatOfArmsComponent.Instance.GetTextureForFaction(settlement.Faction);
+                Texture2D texture = CoatOfArmsComponent.Instance.GetTextureForFaction(__instance.Faction);
                 if (texture != null)
                 {
-                    Patch_ExpandableWorldObjectsOnGUI.SaveAndSwap(settlement.Faction.def, texture);
+                    Patch_ExpandableWorldObjectsOnGUI.SaveAndSwap(__instance.Faction.def, texture);
                     __result = Color.white;
                     return false;
                 }
             }
             else
             {
-                Patch_ExpandableWorldObjectsOnGUI.Restore(settlement.Faction.def);
+                Patch_ExpandableWorldObjectsOnGUI.Restore(__instance.Faction.def);
             }
         }
 
-        if (settlement.Faction.IsPlayer && hasCustom)
+        if (hasCustom)
         {
             __result = Color.white;
             return false;
